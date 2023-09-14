@@ -1,0 +1,12 @@
+{
+    "vsicons.presets.angular": true,
+    "python.testing.pytestArgs": [
+        "Python-3.11.3"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "dart.cliConsole": "terminal",
+    "debug.terminal.clearBeforeReusing": true,
+    "synthwave84.brightness": 2,
+    "synthwave84.disableGlow": true
+}
