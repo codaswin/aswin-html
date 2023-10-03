@@ -1,5 +1,5 @@
 import { cart } from "../data/cart.js";
-import { addItemToCart } from "../data/cart.js";
+import { increaseQuantity } from "../data/cart.js";
 import { products } from "../data/products.js";
 import { priceCentsToBucks } from "./utils.js";
 
@@ -64,13 +64,13 @@ document.querySelectorAll(".js-add-to-cart").forEach((button) => {
   button.addEventListener("click", () => {
     const productId = button.dataset.productId;
 
-    addItemToCart(productId);
+    increaseQuantity(productId);
 
-    updateCartInWebPage();
+    updateCartPic();
   });
 });
 
-function updateCartInWebPage() {
+function updateCartPic() {
   let cartQuantity = 0;
 
   cart.forEach((items) => {

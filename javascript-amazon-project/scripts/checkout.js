@@ -1,6 +1,6 @@
 import { cart } from "../data/cart.js";
 import { products } from "../data/products.js";
-import {priceCentsToBucks} from './utils.js';
+import { priceCentsToBucks } from "./utils.js";
 
 let orderSummery = "";
 cart.forEach((cartItem) => {
@@ -88,7 +88,4 @@ cart.forEach((cartItem) => {
   </div>`;
 });
 
-console.log(orderSummery);
-
- document.querySelector('.js-order-summary')
-  .innerHTML = orderSummery;
+document.querySelector(".js-order-summary").innerHTML = orderSummery;
