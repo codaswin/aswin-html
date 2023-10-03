@@ -27,3 +27,16 @@ export function increaseQuantity(productId) {
     });
   }
 }
+
+export function removeProductFromCart(productid){
+  let newCart = [];
+
+  cart.forEach((item) => {
+    if (productid !== item.productId){
+      newCart.push(item);
+
+    }
+  });
+
+  cart = newCart;
+}
